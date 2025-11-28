@@ -40,8 +40,8 @@ Visit `http://localhost:8000/login`
 ## Login
 
 **Default SuperAdmin Credentials:**
-- Email: `superadmin@example.com`
-- Password: `password`
+- Email: `superadmin@supderadmin.com`
+- Password: `admin123`
 
 After login, you can:
 - Invite companies (SuperAdmin)
@@ -62,10 +62,5 @@ php artisan test
 - Member sees only their own URLs
 - Short URLs require authentication to access
 
-## Technologies
 
-- Laravel 12
-- Spatie Laravel Permission
-- Bootstrap 5.3.8 CDN
-- MySQL
 
