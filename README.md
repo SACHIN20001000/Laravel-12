@@ -2,6 +2,13 @@
 
 A multi-tenant URL shortening service built with Laravel 12, featuring role-based access control.
 
+##Video
+
+
+https://github.com/user-attachments/assets/c9b5f3c5-5b8b-4735-90f1-4de29e04a87a
+
+
+
 ## Quick Setup
 
 1. **Install dependencies:**
