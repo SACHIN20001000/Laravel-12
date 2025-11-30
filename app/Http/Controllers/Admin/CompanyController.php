@@ -35,6 +35,7 @@ class CompanyController extends Controller
             return $company;
         });
 
+        
         return view('admin.companies.index', compact('companies', 'search'));
     }
 

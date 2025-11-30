@@ -19,6 +19,9 @@ class InvitationController extends Controller
 
         if ($user->hasRole('SuperAdmin')) {
             if (isset($validated['company_id'])) {
+                if ($validated['role'] !== 'Admin') {
+                    return redirect()->back()->with('error', 'SuperAdmin can only invite Admins for new companies.');
+                }
                 $company = Company::findOrFail($validated['company_id']);
                 $newUser = User::create([
                     'name' => $validated['name'],
@@ -27,6 +30,7 @@ class InvitationController extends Controller
                     'company_id' => $company->id,
                 ]);
                 $newUser->syncRoles([$validated['role']]);
+
             } else {
                 if ($validated['role'] !== 'Admin') {
                     return redirect()->back()->with('error', 'SuperAdmin can only invite Admins for new companies.');

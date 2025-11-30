@@ -24,8 +24,6 @@
                         <label for="role" class="form-label">Role</label>
                         <select class="form-select" id="role" name="role" required>
                             <option value="Member">Member</option>
-                            <option value="Sales">Sales</option>
-                            <option value="Manager">Manager</option>
                         </select>
                     </div>
                 </div>

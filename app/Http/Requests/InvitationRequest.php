@@ -29,4 +29,6 @@ class InvitationRequest extends FormRequest
             'company_id' => ['nullable', 'exists:companies,id'],
         ];
     }
+
+    
 }

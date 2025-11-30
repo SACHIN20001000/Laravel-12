@@ -72,7 +72,6 @@
                             <select class="form-select" id="role" name="role" required>
                                 @if(auth()->user()->hasRole('SuperAdmin'))
                                     <option value="Admin">Admin</option>
-                                    <option value="Member">Member</option>
                                 @else
                                     <option value="Member">Member</option>
                                 @endif

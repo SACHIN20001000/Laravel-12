@@ -24,11 +24,13 @@ Route::middleware('auth')->group(function () {
         Route::get('my-company', [CompanyController::class, 'showMyCompany'])->name('companies.my-company');
     });
 
-    Route::get('/s/{code}', [ShortUrlRedirectController::class, 'redirect'])
-        ->where('code', '[a-zA-Z0-9]+')
-        ->name('short-url.redirect');
+   
 });
 
+
+ Route::get('/s/{code}', [ShortUrlRedirectController::class, 'redirect'])
+        ->where('code', '[a-zA-Z0-9]+')
+        ->name('short-url.redirect');
 
 Route::fallback(function () {
     if (auth()->check()) {
